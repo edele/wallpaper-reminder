@@ -33,7 +33,7 @@ namespace wallpaper_reminder
         {
             canvas.FillRectangle(bgBrush, new Rectangle(0, 0, w, h));
             canvas.DrawString(text,
-                new Font("Verdana", 12),
+                new Font("Lucida Sans Unicode", 11),
                 new SolidBrush(Color.FromArgb(60, 60, 60)),
                 new Point(w / 2, h - 60));
         }
@@ -47,6 +47,10 @@ namespace wallpaper_reminder
             var uri = new System.Uri("c:\\foo");
             var converted = uri.AbsoluteUri;
             Wallpaper.Set((Image)b, Wallpaper.Style.Centered);
+        }
+        public void DeleteImage()
+        {
+            File.Delete(imgPath);
         }
     }
 

@@ -35,6 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tbResH = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bSetWallpaper
@@ -42,7 +43,7 @@
             this.bSetWallpaper.Location = new System.Drawing.Point(130, 61);
             this.bSetWallpaper.Name = "bSetWallpaper";
             this.bSetWallpaper.Size = new System.Drawing.Size(142, 23);
-            this.bSetWallpaper.TabIndex = 0;
+            this.bSetWallpaper.TabIndex = 1;
             this.bSetWallpaper.Text = "Set as wallpaper";
             this.bSetWallpaper.UseVisualStyleBackColor = true;
             this.bSetWallpaper.Click += new System.EventHandler(this.bSetWallpaper_Click);
@@ -53,7 +54,7 @@
             this.label1.Location = new System.Drawing.Point(9, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 13);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 2;
             this.label1.Text = "Reminder text";
             // 
             // tbText
@@ -61,8 +62,9 @@
             this.tbText.Location = new System.Drawing.Point(12, 24);
             this.tbText.Name = "tbText";
             this.tbText.Size = new System.Drawing.Size(260, 20);
-            this.tbText.TabIndex = 2;
-            this.tbText.Text = "Do cool things";
+            this.tbText.TabIndex = 1;
+            this.tbText.Text = "Пупсик Влад ^^";
+            this.tbText.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbText_KeyUp);
             // 
             // tbResW
             // 
@@ -98,11 +100,22 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "×";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Maroon;
+            this.label4.Location = new System.Drawing.Point(9, 95);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(249, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "CAUTION: This will change your desktop wallpaper";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 98);
+            this.ClientSize = new System.Drawing.Size(284, 117);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tbResH);
             this.Controls.Add(this.label2);
@@ -110,6 +123,7 @@
             this.Controls.Add(this.tbText);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bSetWallpaper);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FormMain";
             this.Text = "Wallpaper Reminder";
@@ -127,6 +141,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbResH;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
