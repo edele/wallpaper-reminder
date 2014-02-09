@@ -63,7 +63,7 @@
             this.tbText.Name = "tbText";
             this.tbText.Size = new System.Drawing.Size(260, 20);
             this.tbText.TabIndex = 1;
-            this.tbText.Text = "Пупсик Влад ^^";
+            this.tbText.Text = "Do cool things";
             this.tbText.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbText_KeyUp);
             // 
             // tbResW
