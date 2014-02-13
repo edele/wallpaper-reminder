@@ -34,6 +34,7 @@ namespace wallpaper_reminder
 
         private void bSetWallpaper_Click_NoArgs()
         {
+            this.Hide();
             int w = int.Parse(tbResW.Text);
             int h = int.Parse(tbResH.Text);
             var wr = new WallpaperReminder(w, h);
